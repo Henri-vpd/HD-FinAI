@@ -27,6 +27,8 @@ export const statsData = [
   },
 ];
 
+import { BarChart3, Receipt, PieChart, CreditCard, Globe, Zap, MessageSquare } from "lucide-react";
+
 // Features Data
 export const featuresData = [
   {
@@ -61,29 +63,14 @@ export const featuresData = [
     title: "Automated Insights",
     description: "Get automated financial insights and recommendations",
   },
+  {
+    icon: <MessageSquare className="h-8 w-8 text-blue-600" />,
+    title: "HD FinAI Chatbot",
+    description:
+      "Get real-time AI-powered financial assistance directly from your dashboard",
+  },
 ];
 
-// How It Works Data
-export const howItWorksData = [
-  {
-    icon: <CreditCard className="h-8 w-8 text-blue-600" />,
-    title: "1. Create Your Account",
-    description:
-      "Get started in minutes with our simple and secure sign-up process",
-  },
-  {
-    icon: <BarChart3 className="h-8 w-8 text-blue-600" />,
-    title: "2. Track Your Spending",
-    description:
-      "Automatically categorize and track your transactions in real-time",
-  },
-  {
-    icon: <PieChart className="h-8 w-8 text-blue-600" />,
-    title: "3. Get Insights",
-    description:
-      "Receive AI-powered insights and recommendations to optimize your finances",
-  },
-];
 
 // Testimonials Data
 export const testimonialsData = [
@@ -95,7 +82,7 @@ export const testimonialsData = [
       "HD FinAI has transformed how I manage my business finances. The AI insights have helped me identify cost-saving opportunities I never knew existed.",
   },
   {
-    name: "Donal Mennas",
+    name: "Donald Mennas",
     role: "Accountant",
     image: "https://randomuser.me/api/portraits/men/91.jpg",
     quote:
