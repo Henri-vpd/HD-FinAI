@@ -1,0 +1,121 @@
+- .git
+
+- .next
+
+- actions:
+	- account
+	- budget
+	- dashboard
+	- seed
+	- send-email
+	- transaction
+
+- app:
+	- (auth):
+		- sign-in:
+			- [[...sign-in]]:
+				- page.jsx
+		- sign-up:
+			- [[...sign_up]]:
+				- page.jsx
+		Layout.js
+	- (main):
+		- account:
+			- [id]:
+				- page.jsx
+			- _components:
+				- account-chart.jsx
+				- no-pagination-transaction-table.jsx
+				- transaction-table.jsx
+		- dashboard:
+			- components:
+				- account-card.jsx
+				- budget-progress.jsx
+				- transaction-overview.jsx
+			- layout.js
+			- page.jsx
+		- transaction:
+			- components:
+				- recipt-scanner.jsx
+				- transaction-form.jsx
+			- create:
+				- page.jsx
+		- layout.js
+	- api:
+		- inngest:
+			- route.ts
+		- seed:
+			- route.ts
+	- lib:
+		- schema.js
+	- globals.css
+	- layout.js
+	- not-found.jsx
+	- page.js
+
+- components:
+	- ui:
+		- badge.jsx
+		- button.jsx
+		- calendar.jsx
+		- card.jsx
+		- checkbox.jsx
+		- drawer.jsx
+		- dropdown-menu.jsx
+		- input.jsx
+		- popover.jsx
+		- progress.jsx
+		- select.jsx
+		- sonner.jsx
+		- switch.jsx
+		- table.jsx
+		- tooltip.jsx
+	- create-account-drawer.jsx
+	- header.jsx
+	- hero.jsx
+
+- data:
+	- categories.js
+	- landing.js
+
+- emails:
+	- template.jsx
+
+- hooks:
+	- use-fetch.js
+
+- lib:
+	- inngest:
+		- client.js
+		- function.js
+	- arcject.js
+	- checkUser.js
+	- prisma.js
+	- utils.js
+
+- node_modules:
+	- many_files:
+
+- prisma:
+	- migrations:
+	- schema.prisma
+
+- public:
+	- banner.jpg
+	- logo-sm.jpg
+	- logo.jpg
+
+- .env
+- .eslintrc
+- .gitignore
+- components.json
+- jsconfig.json
+- middleware.js
+- next.config.mjs
+- package.json
+- package-lock.json
+- postcss.config.mjs
+- project_structure.txt
+- README.md
+- tailwind.config.js
+
